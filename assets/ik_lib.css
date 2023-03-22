@@ -1,4 +1,8 @@
 @charset "utf-8";
+:root {
+  --theme-color:rgb(9, 9, 146);
+}
+
 html,
 body {
   margin: 0;
@@ -26,7 +30,7 @@ p {
   margin: 10px 0;
 }
 a {
-  color: #f76;
+  color: var(--theme-color);
   text-decoration: none;
 }
 input[type=text] {
@@ -66,7 +70,7 @@ button {
   -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 0 rgba(255, 255, 255, 0.25);
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
   font: inherit;
   cursor: pointer;
@@ -106,7 +110,7 @@ button[disabled]:focus {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #f76;
+  background-color: var(--theme-color);
   transform-origin: left;
   transform: scaleX(0);
 }
@@ -170,7 +174,7 @@ button[disabled]:focus {
 }
 .ik_accordion dt .button {
   padding: 10px 10px 10px 30px;
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
   -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 0 rgba(255, 255, 255, 0.25);
@@ -272,7 +276,7 @@ button[disabled]:focus {
   margin: 0 2px 1px 0;
   padding: 10px 15px;
   border: 1px solid #ff4a33;
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
   cursor: pointer;
   -webkit-border-top-left-radius: 6px;
@@ -339,8 +343,8 @@ button[disabled]:focus {
   font-size: .65em;
   text-align: center;
   background-color: #fff;
-  color: #f76;
-  border: 1px solid #f76;
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-left-radius: 2px;
@@ -379,7 +383,7 @@ button[disabled]:focus {
   left: -15px;
   width: 12px;
   height: 100%;
-  border-left: 1px solid #f76;
+  border-left: 1px solid var(--theme-color);
 }
 .ik_treemenu ul li:after {
   content: "";
@@ -389,17 +393,17 @@ button[disabled]:focus {
   left: -15px;
   width: 12px;
   height: .7em;
-  border-bottom: 1px solid #f76;
+  border-bottom: 1px solid var(--theme-color);
 }
 .ik_treemenu ul li:last-of-type:before {
   height: .7em;
-  border-bottom: 1px solid #f76;
+  border-bottom: 1px solid var(--theme-color);
 }
 .ik_treemenu ul li:last-of-type:after {
   display: none;
 }
 .ik_treemenu ul li:focus > span {
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
 }
 .ik_treemenu ul li.collapsed ul {
@@ -407,7 +411,7 @@ button[disabled]:focus {
 }
 .ik_treemenu ul li.collapsed .folder:before {
   content: '+';
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
 }
 .ik_treemenu .mouseover {
@@ -415,7 +419,7 @@ button[disabled]:focus {
 }
 .ik_menu {
   margin: 10px 0;
-  background-color: #f76;
+  background-color: var(--theme-color);
   line-height: 1;
 }
 .ik_menu ul {
@@ -473,7 +477,7 @@ button[disabled]:focus {
 .ik_menu ul li ul li:hover,
 .ik_menu ul li ul li:focus,
 .ik_menu ul li ul li.expanded {
-  background-color: #f76;
+  background-color: var(--theme-color);
 }
 .ik_menu ul li ul li.expandable > a {
   box-sizing: border-box;
@@ -525,11 +529,11 @@ button[disabled]:focus {
   font-weight: bold;
 }
 .ik_suggest .suggestions li:hover {
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
 }
 .ik_suggest .suggestions li.selected {
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
 }
 .ik_sortable {
@@ -566,7 +570,7 @@ button[disabled]:focus {
 }
 .ik_sortable ul li:hover,
 .ik_sortable ul li:focus {
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
 }
 .ik_sortable .dragover {
@@ -581,7 +585,7 @@ button[disabled]:focus {
   top: -4px;
   bottom: auto;
   width: 100%;
-  background-color: #f76;
+  background-color: var(--theme-color);
   z-index: 9;
 }
 .ik_sortable .dragover.dropafter:after {
@@ -610,7 +614,7 @@ button[disabled]:focus {
 .ik_slider .ik_fill {
   width: 100%;
   height: 100%;
-  background-color: #f76;
+  background-color: var(--theme-color);
   transform-origin: left;
   transform: scaleX(0);
   transition: transform .2s linear;
@@ -622,7 +626,7 @@ button[disabled]:focus {
   top: -7px;
   left: 0;
   margin-left: -10px;
-  background-color: #f76;
+  background-color: var(--theme-color);
   -webkit-border-top-left-radius: 50%;
   -webkit-border-top-right-radius: 50%;
   -webkit-border-bottom-left-radius: 50%;
@@ -803,7 +807,7 @@ button[disabled]:focus {
   transform: rotate(135deg);
 }
 .ik_carousel .ik_controls .ik_button:hover {
-  background-color: #f76;
+  background-color: var(--theme-color);
 }
 .ik_carousel .ik_controls .ik_navbar {
   display: flex;
@@ -830,7 +834,7 @@ button[disabled]:focus {
   pointer-events: all;
 }
 .ik_carousel .ik_controls .ik_navbar:hover {
-  background-color: #f76;
+  background-color: var(--theme-color);
 }
 .ik_carousel .ik_controls .ik_navbar li {
   display: flex;
@@ -910,13 +914,13 @@ button[disabled]:focus {
   border-bottom-right-radius: 6px;
 }
 .buttongroup .toggle:hover {
-  color: #f76;
+  color: var(--theme-color);
 }
 .buttongroup .toggle:focus {
   z-index: 1;
 }
 .buttongroup .toggle.pressed {
-  background-color: #f76;
+  background-color: var(--theme-color);
   color: #fff;
   border-color: #cc5f52;
   box-shadow: inset 0 5px 3px -3px rgba(0, 0, 0, 0.25);
