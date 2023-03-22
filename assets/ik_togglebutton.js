@@ -42,7 +42,7 @@
 		
 		$elem
 			.on('click', {plugin: plugin}, plugin.onActivate)
-//		.on('keydown', {plugin: plugin}, plugin.onActivate)
+     		.on('keydown', {plugin: plugin}, plugin.onActivate)
 		;
 		
 	};
