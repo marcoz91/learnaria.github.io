@@ -19,7 +19,7 @@
 	</div>
 
 	<div class="" style="z-index: auto; position: static; top: auto;" id="lrg_topnav">
-		<div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs">
+		<div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs" role="navigation">
 			<a id="main-nav"></a>
 			<ul style="" id="topnavlist">
 			<li><a href="index.html" accesskey="1" title="Back to Index Alt+1">Back to Index</a></li>
@@ -32,7 +32,7 @@
 		</div> 
 	</div>
 
-	<div class="logoutbar">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
+	<div class="logoutbar">&nbsp; <input type="text" class="input" role="search"><input type="submit" value="search"></div>
 	<div class="crumbcontainer">
 			<div id="breadcrumbs" tabindex="0" aria-label="breadcrumb links">&nbsp;</div>
 	</div>
@@ -40,7 +40,7 @@
 		<div id="lrg_content">
 			<div id="leftcolumn">
 			  <a id="menu"></a>
-				 <div id="side-menu" aria-label="left side, secondary menu" accesskey="0">
+				 <div id="side-menu" aria-label="left side, secondary menu" accesskey="0" role="navigation">
 					<br/>
 					<h2 class="box"><span>Networking</span></h2>
 					<div class="box" id="menu_Networking">
@@ -71,8 +71,8 @@
 		<br style="clear:both;">
 		<a id="top"></a>
 
-	<div class="profile">
-		<h2>Join our community</h2>
+	<div class="profile" role="main" aria-labelledby="main-title">
+		<h2 id="main-title">Join our community</h2>
 		<div id="feedback">&nbsp;</div>
 		<form id="join_form">
 		<dl>
@@ -211,8 +211,9 @@
 			<br style="width:100%;clear:both;" />
 
 		</div>
-		<div id="advertising">
-		<h2>Advertising</h2>
+
+		<div id="advertising" role="banner" aria-labelledby="banner-title">
+		<h2 id="banner-title">Advertising</h2>
 			<div>
 				<img src="images/rum_cover.jpg" alt="" />
 				<br style="clear:both;"/>
@@ -224,7 +225,7 @@
 <p><br><br>&nbsp;</p>
 </div>
 
-<div id="footer"> Copyright &copy; <a href="" class="fake">Chang School.</a>
+<div id="footer" role="contentinfo"> Copyright &copy; <a href="" class="fake">Chang School.</a>
 </div>
 
 </body>
